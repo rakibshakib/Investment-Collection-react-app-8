@@ -1,0 +1,18 @@
+.brand-name{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 10px 0;
+    color: green;
+}
+.name-details,
+.total-budget{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.budget{
+    color: green;
+    font-weight: 600;
+}

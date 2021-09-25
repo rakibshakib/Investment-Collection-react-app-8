@@ -1,0 +1,21 @@
+.fund-details{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15px 0px;
+}
+.fund-person{
+    width: 50px;
+}
+.fund-person img{
+    width: 100%;
+    border-radius: 10px;
+}
+.person-name{
+    font-size: 1rem;
+    font-weight: normal;
+    margin-right: 10px;
+}

@@ -1,0 +1,34 @@
+.investmentor{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 15px;
+    padding: 15px;
+    height: 510px;
+}
+.card-img{
+    width: 290px;
+    height: 300px;
+}
+.card-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.people-details h5{
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+.people-details p{
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+.add-invest{
+    background-color: green;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
