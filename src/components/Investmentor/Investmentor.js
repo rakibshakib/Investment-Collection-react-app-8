@@ -4,10 +4,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDonate } from '@fortawesome/free-solid-svg-icons'
 
 const Investmentor = (props) => {
+    // create fontawsome icon element 
     const element = <FontAwesomeIcon icon={faDonate} />
+    // destructuring object here
     const { first_name, last_name, budget_amount, email, image, age, mobile, city } = props.people;
     const {addFundHandeler} = props;
     return (
+        // people card 
         <div className="investmentor">
             <figure className="card-img">
                 <img src={image} alt="" />

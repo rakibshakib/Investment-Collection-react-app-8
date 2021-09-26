@@ -22,3 +22,27 @@
     margin: 10px 0;
     font-weight: 500;
 }
+@media (max-width: 425px) { 
+    .container,
+    .people-section{
+        grid-template-columns: 1fr;
+    }
+ }
+
+@media (min-width: 426px) and (max-width: 768px) { 
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .people-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) { 
+    .container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .people-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

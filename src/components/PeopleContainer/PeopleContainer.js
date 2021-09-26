@@ -6,29 +6,33 @@ import "./PeopleContainer.css";
 const PeopleContainer = () => {
     const [peoples, setPeoples] = useState([]);
     const [fund, setFund] = useState([]);
+    // get data from people json local file 
     useEffect(() => {
-        fetch("./student-data.json")
+        fetch("./people-data.json")
             .then((res) => res.json())
             .then((data) => {
                 setPeoples(data);
             });
     }, []);
+    // fund card hadler 
     const addFundHandeler = (people) => {
         const newPeople = [...fund, people];
         setFund(newPeople);
     }
-
+//  total money collection calculation 
     let totalMoney = 0;
     for (const people of fund) {
         totalMoney += parseFloat(people.budget_amount);
     }
     return (
         <div className="container">
+            {/* people disply section */}
             <div className="people-section">
                 {
                     peoples.map((people) => (<Investmentor addFundHandeler={addFundHandeler} people={people} key={people.id}></Investmentor>))
                 }
             </div>
+            {/* fund people section */}
             <div className="fund-section">
                 <h4>Investor: <span className="budget">{fund.length}</span></h4>
                 <p className="total-fund">Total Fund Collected: $ <span className="budget">{totalMoney.toFixed(2)}</span></p>

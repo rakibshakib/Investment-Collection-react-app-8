@@ -2,6 +2,7 @@ import React from 'react';
 import './FundContainer.css';
 
 const FundContainer = (props) => {
+    // destructuring object
     const { first_name, last_name, image } = props.people;
     
 
