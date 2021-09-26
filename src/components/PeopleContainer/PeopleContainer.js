@@ -16,6 +16,12 @@ const PeopleContainer = () => {
     }, []);
     // fund card hadler 
     const addFundHandeler = (people) => {
+        const isExited = fund.find(p => p.id === people.id);
+
+        if(isExited) {
+            return alert("User Exited")
+        }
+        
         const newPeople = [...fund, people];
         setFund(newPeople);
     }
