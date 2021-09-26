@@ -12,7 +12,7 @@ const FundContainer = (props) => {
                     <img src={image} alt="" />
                 </figure>
 
-                <div>
+                <div className="details">
                 <h2 className='person-name'>{first_name} {last_name}</h2>
                 <p>Investment Time: <span className="budget">1</span></p>
                 </div>

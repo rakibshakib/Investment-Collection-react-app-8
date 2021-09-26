@@ -1,7 +1,10 @@
 import React from 'react';
 import './Investmentor.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDonate } from '@fortawesome/free-solid-svg-icons'
 
 const Investmentor = (props) => {
+    const element = <FontAwesomeIcon icon={faDonate} />
     const { first_name, last_name, budget_amount, email, image, age } = props.people;
     const {addFundHandeler} = props;
     return (
@@ -15,7 +18,7 @@ const Investmentor = (props) => {
                 <p>Age: {age}</p>
                 <p>Budget: $<span className='budget'>{budget_amount}</span> </p>
             </div>
-            <button className='add-invest' onClick={()=> addFundHandeler(props.people)}>Add To Invest</button>
+            <button className='add-invest' onClick={()=> addFundHandeler(props.people)}>{element}  Add To Invest</button>
         </div>
     )
 }
