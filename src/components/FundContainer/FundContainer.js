@@ -14,7 +14,6 @@ const FundContainer = (props) => {
 
                 <div className="details">
                 <h2 className='person-name'>{first_name} {last_name}</h2>
-                <p>Investment Time: <span className="budget">1</span></p>
                 </div>
 
             </div>

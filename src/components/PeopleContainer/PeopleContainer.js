@@ -17,6 +17,7 @@ const PeopleContainer = () => {
         const newPeople = [...fund, people];
         setFund(newPeople);
     }
+
     let totalMoney = 0;
     for (const people of fund) {
         totalMoney += parseFloat(people.budget_amount);
@@ -29,10 +30,10 @@ const PeopleContainer = () => {
                 }
             </div>
             <div className="fund-section">
-                <h4>Investor: {fund.length}</h4>
-                <p className="total-fund">Total Fund Collected: <span className="budget">{totalMoney.toFixed(2)}</span></p>
+                <h4>Investor: <span className="budget">{fund.length}</span></h4>
+                <p className="total-fund">Total Fund Collected: $ <span className="budget">{totalMoney.toFixed(2)}</span></p>
                 {
-                    fund.map(people=> <FundContainer people={people} key={people.email}></FundContainer>)
+                    fund.map(people => <FundContainer people={people} key={people.email}></FundContainer>)
                 }
             </div>
         </div>

@@ -7,7 +7,7 @@
     grid-gap: 0 15px;
 }
 .people-section{
-    margin-top: 20px;
+    margin: 20px 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
@@ -17,4 +17,8 @@
 .fund-section{
     margin-top: 20px;
     margin-left: 15px;
+}
+.fund-section p{
+    margin: 10px 0;
+    font-weight: 500;
 }

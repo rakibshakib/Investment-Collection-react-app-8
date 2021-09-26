@@ -5,7 +5,7 @@ import { faDonate } from '@fortawesome/free-solid-svg-icons'
 
 const Investmentor = (props) => {
     const element = <FontAwesomeIcon icon={faDonate} />
-    const { first_name, last_name, budget_amount, email, image, age } = props.people;
+    const { first_name, last_name, budget_amount, email, image, age, mobile, city } = props.people;
     const {addFundHandeler} = props;
     return (
         <div className="investmentor">
@@ -15,6 +15,8 @@ const Investmentor = (props) => {
             <div className="people-details">
                 <h5>{first_name} {last_name}</h5>
                 <p>email: {email}</p>
+                <p>Phone: {mobile}</p>
+                <p>City: {city}</p>
                 <p>Age: {age}</p>
                 <p>Budget: $<span className='budget'>{budget_amount}</span> </p>
             </div>
