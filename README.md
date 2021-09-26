@@ -1,5 +1,5 @@
-## Investment Collection 
-### Investment Collection for Annual Cultural Program - 2021
+# Investment Collection 
+## Investment Collection for Annual Cultural Program - 2021
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
