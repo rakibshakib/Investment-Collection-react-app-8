@@ -18,18 +18,20 @@ const PeopleContainer = () => {
     const addFundHandeler = (people) => {
         const isExited = fund.find(p => p.id === people.id);
 
-        if(isExited) {
-            return alert("User Exited")
+        if (isExited) {
+            alert("This man exceeds his budget...")
+        } else {
+            const newPeople = [...fund, people];
+            setFund(newPeople);
         }
-        
-        const newPeople = [...fund, people];
-        setFund(newPeople);
     }
-//  total money collection calculation 
+    //  total money collection calculation 
     let totalMoney = 0;
     for (const people of fund) {
         totalMoney += parseFloat(people.budget_amount);
     }
+
+
     return (
         <div className="container">
             {/* people disply section */}
