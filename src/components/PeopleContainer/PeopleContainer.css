@@ -27,6 +27,12 @@
     .people-section{
         grid-template-columns: 1fr;
     }
+    .fund-section{
+        order: 1;
+    }
+    .people-section{
+        order: 2;
+    }
  }
 
 @media (min-width: 426px) and (max-width: 768px) { 
@@ -35,6 +41,12 @@
     }
     .people-section{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .fund-section{
+        order: 1;
+    }
+    .people-section{
+        order: 2;
     }
 }
 
