@@ -6,6 +6,8 @@ import { faDonate } from '@fortawesome/free-solid-svg-icons'
 const Investmentor = (props) => {
     // create fontawsome icon element 
     const element = <FontAwesomeIcon icon={faDonate} />
+    console.log(props.people);
+    console.log("this is destr", props.people.first_name);
     // destructuring object here
     const { first_name, last_name, budget_amount, email, image, age, mobile, city } = props.people;
     const {addFundHandeler} = props;

@@ -30,7 +30,7 @@ const PeopleContainer = () => {
     for (const people of fund) {
         totalMoney += parseFloat(people.budget_amount);
     }
-
+    console.log("this is come from peoples", peoples)
 
     return (
         <div className="container">
